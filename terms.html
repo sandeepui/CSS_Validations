@@ -1,0 +1,160 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ValvKeep</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- For third-generation iPad with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bower_components/iids-dist/components/brandkit/favicon/favicon-144px.png">
+
+  <!-- For iPhone with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bower_components/iids-dist/ccomponents/brandkit/favicon/favicon-114px.png">
+
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bower_components/iids-dist/components/brandkit/favicon/favicon-72px.png">
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="bower_components/iids-dist/components/brandkit/favicon/favicon.png">
+
+  <link rel="icon" href="bower_components/iids-dist/components/brandkit/favicon/favicon.ico">
+  <link href="bower_components/iids-dist/css/iids.css" rel="stylesheet" type="text/css">
+  <style media="screen" type="text/css">
+     body {
+      background: #000;
+      overflow: hidden;
+    }
+    button {
+    align:center;
+    }
+    .TCBody {
+      background: #888888;
+    }
+    .TCContent {
+      background-color: #e1e2e5;
+      width:600px
+    }
+
+  </style>
+  
+   
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+   <!-- build:css(.tmp) styles/main.css -->
+  <!-- endbuild -->
+    <!--[if lt IE 9]>
+      <link id="theme-ie" href="bower_components/iids-dist/css/ie.css" rel="stylesheet" type="text/css">
+      <![endif]-->
+</head>
+<body ng-app="TC">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <div ng-controller="TC">
+
+
+     <!-- TC  NAV -->
+      <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="brand" href="#"><span class="ge-logo"></span> <span>{{appName}}<small><i>powered by</i> GE Oil & Gas</small></span></a>
+        </div>
+      </div>
+
+
+      <!-- Main Content Area -->
+      <div id="MAIN_CONTENT" class="TCContainer ng-cloak" ng-view>
+        <div class="module fullwidth TCBody">
+			<div class="offset4 span6" style="width:600px">
+				<div class="tcForm TCContent"  style="width:600px">
+					<h3 style="text-align: center">Terms and Conditions</h3>
+							<p style="text-align: center">
+							    END-USER LICENSE AGREEMENT FOR SOFTWARE OF DRESSER, INC. 
+							    
+							    This End-User License Agreement
+								("EULA") is a legal agreement between you (either an individual
+								person or a single legal entity, who will be referred to in this
+								EULA as "You") and Dresser, Inc. (who is referred to in this
+								EULA as "Dresser") for the software product that accompanies
+								this EULA. By selecting Accept or by using the software, you
+								agree to be bound by the terms of this agreement. If you do not
+								agree to the terms of this agreement, select Not Accept. 1.
+								Grant of License: This License Agreement permits you to use one
+								copy of the specified version of the software identified above
+								on any single computer. 2. Copyright: The software is owned by
+								Dresser and is protected by United States copyright laws and
+								international treaty provisions. Therefore, you must treat the
+								software like any other copyrighted material except that you may
+								either (a) make one copy of the software solely for backup or
+								archival purposes, or (b) transfer the software to a single hard
+								disk provided you keep the original solely for backup or
+								archival purposes. You may not reverse engineer, decompile or
+								disassemble the software. 3. Limited Warranty: Dresser warrants
+								that the software will perform substantially in accordance with
+								the accompanying printed materials for a period of ninety (90)
+								days from the date of receipt. If the Software contains any
+								material errors, malfunctions, or defects, Dresser shall either
+								correct or replace the Software or refund the purchase price for
+								the Software, at the election of Dresser, which remedy shall be
+								your exclusive remedy for such errors, malfunctions or defects.
+
+							</p>
+							<p>DRESSER MAKES NO OTHER REPRESENTATIONS OR WARRANTIES,
+								EXPRESS OR IMPLIED, INCLUDING THE WARRANTY OF MERCHANTABILITY
+								AND FITNESS FOR A PARTICULAR PURPOSE, WITH RESPECT TO THE
+								SOFTWARE AND ASSOCIATED DOCUMENTATION.</p>
+							<p>IN NO EVENT SHALL DRESSER BE LIABLE TO YOU FOR INDIRECT,
+								SPECIAL INCIDENTAL OR CONSEQUENTIAL DAMAGES (WHETHER DENOMINATED
+								IN CONTRACT, TORT, STRICT LIABILITY IN TORT, NEGLIGENCE OR OTHER
+								THEORIES) OR FOR LOST PROFITS OR INCREASED EXPENSES ARISING OUT
+								OF THIS AGREEMENT OR THE USE OF THE SOFTWARE AND ASSOCIATED
+								DOCUMENTATION.</p>
+							<p>IN NO EVENT SHALL TOTAL LIABILITY OF DRESSER FOR DAMAGES
+								TO YOU EXCEED THE SUM PAID BY YOU TO DRESSER FOR THE SOFTWARE
+								AND ASSOCIATED DOCUMENTATION.</p>
+							<div>
+						<form id="tc" autocomplete="off"
+							ng-submit="submit(user)">
+								<input type="checkbox" ng-model="field.status"
+									ng-click="isRead()" /> <span>I have read the above
+									document.</span>
+								<button type="submit" style="align: center">I accept</button>
+						</form>
+							</div>
+						</div>
+						</div>
+						</div>
+					</div>
+
+				</div>
+      </div>
+
+      <!-- Footer -->
+
+      <div id="footer">
+        <div class="row-fluid">
+          <div class="span4"></div>
+          <div class="span4 copyright">©{{year}} GENERAL ELECTRIC. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+    <!-- load css after inline ng grid css -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- build:js scripts/modules.js -->
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="scripts/controllers/terms.js"></script>
+
+</body>
+</html>
